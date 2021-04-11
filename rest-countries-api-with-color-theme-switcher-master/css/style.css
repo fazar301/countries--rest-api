@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.card-con{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    /* align-items:stretch; */
+    /* margin-top: 60px; */
+    gap: 70px;
+}
+.card{
+
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+}
+.content{
+    padding: 20px 10px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    /* border-top: 1px solid grey; */
+}
+.card-val img{
+    width: 100%;
+    object-fit: center;
+    /* height: 150px; */
+}
+.bold,.name{
+    font-weight: 600;
+}
+.name{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.population,.region,.capital{
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 20px;
+}
+.fixed{
+    position: fixed;
+    top: 68px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: hsl(0, 0%, 98%);
+    display: none;
+    /* padding: ; */
+}
+.tampil{
+    display: block;
+}
+.tutup{
+    position: relative;
+    z-index: 9;
+    margin: 60px 0;
+    padding: 5px 30px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    background: white;
+    box-shadow: 0 1px 4px hsla(0, 0%, 52%,.3);
+    top: 0;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.val{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.center:nth-child(2){
+    width: 52%;
+
+}
+.fixed .name{
+    line-height: 80px;
+    font-size: 2em;
+}
+.kiri{
+    width: 50%;
+}
+.kanan{
+    width: 50%;
+}
+.fl{
+    display: flex;
+}
+.kiri,.kanan{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.kiri span,.kanan span{
+    margin-bottom: 10px;
+}
+.fixed .borders{
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: -200px;
+    width: 200%;
+    display: flex;
+}
+.kon{
+    display: grid;
+    grid-template-columns: 110px 110px 110px;
+    grid-template-rows: 40px 40px 40px;
+    /* border: 1px solid red; */
+}
+.borders .bold{
+    width: 30%;
+    /* border: 1px solid yellowgreen; */
+    
+}
+.border{
+    padding: 5px 20px;
+    background-color: hsl(0, 0%, 98%);
+    margin-right: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px hsla(207, 26%, 17%,.5);
+    cursor: pointer;
+        overflow: hidden;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+          /* width:100px; */
+}
+/* .border:nth-child(2){
+    margin-left: 15px;
+} */
+form{
+    margin-top: 110px;
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.bendera{
+    max-height: 350px;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.left button{
+    position: absolute;
+    left: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.left input{
+    border: none;
+    width: 400px;
+    padding: 15px 30px 15px 60px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px hsla(0, 0%, 52%,.3);
+}
+select{
+    padding: 10px;
+    height: 46px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+nav button,.tutup{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+}
+.tutup .panah{
+    width: 20px;
+    margin-right: 10px;
+}
+.con .bulan{
+    background: url('../images/moon.png');
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.con{
+    position: relative;
+}
+.gelap{
+    background: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+.darkMode .card{
+    background: hsl(209, 23%, 22%);
+    color: white;
+}
+.darkMode .fixed,.darkMode .border{
+    background: hsl(209, 23%, 22%);
+}
+.darkMode .fixed .tutup{
+    color: white;
+}
+.dark .bulan{
+    mask: url('../images/moon.svg');
+    mask-size: cover;
+    background: hsl(0, 0%, 100%);;
+}
+.dark button{
+    color: hsl(0, 0%, 100%);
+}
+.bulan{
+    cursor: pointer;
+}
+.tutup{
+    box-shadow: 0 0 4px hsl(207, 26%, 17%);
+}
+button{
+    cursor: pointer;
+}
+
+select option {
+    margin-right: 60px;
+}
+.darkMode{
+    background: hsl(207, 26%, 17%);
+}
+nav .con{
+    /* border: 1px solid red; */
+    padding: 10px 26px;
+}
+.panah{
+    mask: url('../images/left-arrow.svg');
+    mask-size: cover;
+    height: 15px;
+    mask-position: center;
+    background: black;
+    
+}
+.darkMode .panah{
+    background: white;
+}

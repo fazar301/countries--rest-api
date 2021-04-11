@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rest-countries-api-with-color-theme-switcher-master/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+        <h2>Where in the world?</h2>
+        <div class="con">
+        <button id="mod">Dark Mode</button>
+        <div class="bulan" for="mod"></div> 
+        </div>
+        </div>
+    </nav>
+    <div class="container">
+        <form autocomplete="off">
+            <div class="left">
+            <input type="text" class="keyword" placeholder="Search for a country...">
+            <button type="submit">
+                <img src="rest-countries-api-with-color-theme-switcher-master/images/search.svg" alt="" srcset="" width="20">
+            </button>
+            </div>
+            <select name="filter" id="filter">
+                <option value="" disabled selected hidden autocomplete="off">Filter By Region</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </form>
+        <div class="card-con"></div>
+    </div>
+    <script src="rest-countries-api-with-color-theme-switcher-master/js/script.js"></script>
+</body>
+</html>
